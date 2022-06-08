@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../dist/output.css" />
     <title>TailWind CSS Tutorial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="overflow-y-hidden font-poppins">
     <header class="bg-blue-400 p-4">
       <nav
         class="container flex justify-between items-center text-white mx-auto"
@@ -28,14 +34,28 @@
     </header>
 
     <main>
-      <div class="container mx-auto flex justify-between">
-        <div class="flex flex-col">
-          <h1>追い風を感じる</h1>
-          <p>TailWindCSSでCSSスタイリングを加速させる</p>
-          <a href=""> 詳しく見る </a>
-        </div>
-        <div>
-          <img src="./img/tailwind-logo.png" alt="" />
+      <div class="bg-tutorial-bg bg-cover bg-center object-cover min-h-screen">
+        <div
+          class="container mx-auto md:flex md:justify-around items-center py-60 md:py-80"
+        >
+          <div class="flex flex-col text-center md:text-left">
+            <h1 class="text-5xl sm:text-7xl">追い風を感じる🚀</h1>
+            <p class="mb-10 text-xl">
+              TailWindCSSでCSSスタイリングを加速させる
+            </p>
+            <a
+              href=""
+              class="px-6 py-3 bg-blue-600 rounded-md hover:bg-blue-800 text-white w-max cursor-pointer transition-all duration-300 self-center md:self-start"
+              >詳しく見る
+            </a>
+          </div>
+          <div>
+            <img
+              src="./img/tailwind-logo.png"
+              alt=""
+              class="mx-auto mt-24 md:mt-0"
+            />
+          </div>
         </div>
       </div>
     </main>
